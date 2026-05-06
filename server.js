@@ -1,11 +1,11 @@
-// By: Colime.
+
 
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
     if (url.pathname === '/') {
-      return new Response('<p>about:blank</p>', {
+      return new Response('<p>Believe me, you could not write shittier HTML than this even if you tried. to use <proxy>/https://example.com/</p>', {
         status: 200,
         headers: {
           'Content-Type': 'text/html; charset=utf-8',
